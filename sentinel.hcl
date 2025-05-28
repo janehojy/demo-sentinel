@@ -24,5 +24,5 @@ policy "limit-cost-by-workspace-type" {
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "soft-mandatory"
 }
