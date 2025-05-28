@@ -15,7 +15,7 @@ module "aws-functions" {
 }
 
 policy "restrict-aws-instances-type" {
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "limit-cost-by-workspace-type" {
@@ -24,5 +24,5 @@ policy "limit-cost-by-workspace-type" {
 
 policy "enforce-mandatory-tags" {
   source = "./enforce-mandatory-tags.sentinel"
-  enforcement_level = "soft-mandatory"
+  enforcement_level = "hard-mandatory"
 }
